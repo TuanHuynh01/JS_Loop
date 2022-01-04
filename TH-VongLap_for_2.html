@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Loops</h2>
+    <input type="text" name="" id="abc">
+    <button onclick="result()">Kết quả</button>
+    <p id="def" style="color: red;"></p>
+</body>
+</html>
+<script>
+    function result() {
+        let num = parseInt(document.getElementById("abc").value);
+        let total = 0
+        let a = 1
+        for(;a <= num; a+= 1) {
+        total = total + a;
+        }
+        document.getElementById("def").innerHTML = "Tổng số từ  số 1 đến số " + num + " là: " + total 
+    }
+    
+</script>
