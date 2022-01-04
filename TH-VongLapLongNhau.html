@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body> 
+</html>
+<script>
+    let table = "<table border='2' width='300' cellspacing='0' cellpadding='3'>";
+    let a = 1
+    let b = 1
+    while(a <= 10) {
+        table = table + "<tr>";
+        while(b <= 10) {
+            table = table + "<td>" + a * b + "</td>";
+            b++;
+        }
+        table = table + "</tr>";
+        b = 1;
+        a++;
+    }
+    table = table + "</table>";
+    document.write(table);
+</script>
