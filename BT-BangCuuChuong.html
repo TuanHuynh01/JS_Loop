@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 10px;
+        }
+        h2 {
+            margin-left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bảng cửu chương</h2>
+</body>
+</html>
+<script>
+    let table = "<table border='2px' width='500px' cellpadding='3'>";
+    let a = 2;
+    let b = 1;
+    while(b <= 9) {
+        table = table + "<tr>";
+        while(a <= 9) {
+            let total = a*b
+            table = table + "<td>" + a + "x" + b + "=" + total + "</td>";
+            a++;
+        }
+        b++
+        a = 2
+        table = table + "</tr>";
+    }
+    table = table + "</table>";
+    document.write(table);
+</script>
